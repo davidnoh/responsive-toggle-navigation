@@ -1,0 +1,117 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+
+	
+body {
+	font: 14px/21px Helvetica, Arial, sans-serif;
+}
+
+.uppercase {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+
+
+h1 {
+	font: 36px/120% Helvetica, Arial, sans-serif;
+	padding: 1em 0;
+}
+
+header {
+	width: 100%;
+	line-height: 50px;
+}
+
+
+// This ist the important part
+#navigation {
+	background: #000;
+	color: #fff;
+	@include clearfix;
+
+	h3 {
+		display: none;
+		margin: 0;
+		padding: 0;
+		padding: 0 10px;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	li {
+		float: left;
+		padding: 0;
+		margin: 0;
+	}
+
+	a {
+		color: #fff;
+		display: block;
+		padding: 0 40px;
+		border-right: 1px solid #fff;
+		text-decoration: none;
+		@extend .uppercase;
+
+		&:hover {
+			background: #474741;
+		}
+	}
+}
+
+
+/* In this sample, we are just using the max-width 768px to simplify the code. 
+   Please note, that you have to add special media queries for iPhone! */
+
+@media only screen and (max-width: 768px) {
+	
+	h1 {
+		font: 18px/21px Helvetica, Arial, sans-serif;
+	}
+	
+	#navigation {
+		h3 {
+			display: block;
+			cursor: pointer;
+			background: url('../images/icon-menu.png') left no-repeat;
+			margin: 0 20px;
+			padding: 0 20px;
+			
+			&.active {
+				background: url('../images/icon-close.png') left no-repeat;
+			}
+		}
+		nav {
+			display: none;
+		
+				a {
+					border-right: 0;
+					border-top: 1px solid #fff;
+				}
+
+				li {
+					display: block;
+					float: none;
+				}
+			}
+		}
+
+// Fallback
+	.no-js {
+		#navigation {
+			nav {
+				display: block;
+			}
+		}		
+	}
+}

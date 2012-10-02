@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Responsive Toggle Navigation</title>
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	
+	<meta name="viewport" content="initial-scale = 1.0">
+</head>
+<body class="no-js">
+<header role="banner">
+	<h1>Responsive Toggle Navigation</h1>
+	<div id="navigation">
+	<h3 id="toggleNav">Menu</h3>
+		<nav>
+			<ul class="clearfix" role="navigation">
+				<li><a href="#Home" title="Get back to Home-Page">Home</a></li>
+				<li><a href="#Works" title="Stuff i have worked on">Works</a></li>
+				<li><a href="#About" title="Some information about myself">About</a></li>
+				<li><a href="#Contact" title="How to get in contact">Contact</a></li>
+			</ul>
+		</nav>
+	</id>
+</header>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>
+	jQuery(function($){
+		// First: Remove the Fallback class
+		$('body').removeClass('no-js');	
+		
+		// Second: Toggle the menu
+		$('#toggleNav').click(function() {
+			$('#navigation nav').slideToggle('fast');
+			
+			// toggling active class for the posibilty of styling
+			$(this).toggleClass('active');
+		})
+	});
+</script>
+</body>
+</html>
