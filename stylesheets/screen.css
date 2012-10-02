@@ -2,6 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* Have a nice coding day !!! */
 /* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,12 +68,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 10, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
 body {
   font: 14px/21px Helvetica, Arial, sans-serif;
 }
 
-/* line 14, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 .uppercase, #navigation a {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -138,7 +139,8 @@ header {
     font: 18px/21px Helvetica, Arial, sans-serif;
   }
 
-  /* line 83, ../sass/screen.scss */
+  /* Here again. The important part */
+  /* line 85, ../sass/screen.scss */
   #navigation h3 {
     display: block;
     cursor: pointer;
@@ -146,26 +148,27 @@ header {
     margin: 0 20px;
     padding: 0 20px;
   }
-  /* line 90, ../sass/screen.scss */
+  /* line 92, ../sass/screen.scss */
   #navigation h3.active {
     background: url("../images/icon-close.png") left no-repeat;
   }
-  /* line 94, ../sass/screen.scss */
+  /* line 96, ../sass/screen.scss */
   #navigation nav {
     display: none;
   }
-  /* line 97, ../sass/screen.scss */
+  /* line 99, ../sass/screen.scss */
   #navigation nav a {
     border-right: 0;
     border-top: 1px solid #fff;
   }
-  /* line 102, ../sass/screen.scss */
+  /* line 104, ../sass/screen.scss */
   #navigation nav li {
     display: block;
     float: none;
   }
 
-  /* line 112, ../sass/screen.scss */
+  /* Fallback */
+  /* line 114, ../sass/screen.scss */
   .no-js #navigation nav {
     display: block;
   }

@@ -3,6 +3,8 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+/* Have a nice coding day !!! */
+
 @import "compass/reset";
 @import "compass/utilities/general/clearfix";
 
@@ -15,8 +17,6 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
-
-
 
 h1 {
 	font: 36px/120% Helvetica, Arial, sans-serif;
@@ -78,7 +78,9 @@ header {
 	h1 {
 		font: 18px/21px Helvetica, Arial, sans-serif;
 	}
-	
+
+
+/* Here again. The important part */
 	#navigation {
 		h3 {
 			display: block;
@@ -106,7 +108,7 @@ header {
 			}
 		}
 
-// Fallback
+/* Fallback */
 	.no-js {
 		#navigation {
 			nav {
