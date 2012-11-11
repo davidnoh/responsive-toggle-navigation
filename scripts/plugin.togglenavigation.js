@@ -8,7 +8,7 @@
 		
 		$(window).resize(function(){
 		    if ($(window).width() > 768 ) {
-		      $(wrapper).find('nav').removeAttr("style")
+		      $(wrapper).find('nav ul').removeAttr("style")
 		    }
 		});
 	};
