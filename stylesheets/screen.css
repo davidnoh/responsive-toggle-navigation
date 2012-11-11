@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* Have a nice coding day !!! */
-/* line 17, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,90 +25,92 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 2, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
-#navigation {
+/* line 2, ../sass/menu.scss */
+.toggleNavWrapper {
   background: #000;
   color: #fff;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 7, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
-#navigation h3 {
+/* line 7, ../sass/menu.scss */
+.toggleNavWrapper h3 {
   display: none;
   margin: 0;
   padding: 0;
   padding: 0 10px;
 }
-/* line 14, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
-#navigation nav {
+/* line 14, ../sass/menu.scss */
+.toggleNavWrapper nav {
   display: block;
 }
-/* line 18, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
-#navigation ul {
+/* line 17, ../sass/menu.scss */
+.toggleNavWrapper nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
+  overflow: hidden;
+  *zoom: 1;
 }
-/* line 25, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
-#navigation li {
+/* line 25, ../sass/menu.scss */
+.toggleNavWrapper nav li {
   float: left;
   padding: 0;
   margin: 0;
 }
-/* line 31, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
-#navigation a {
+/* line 32, ../sass/menu.scss */
+.toggleNavWrapper nav a {
   color: #fff;
   display: block;
   padding: 0 40px;
   border-right: 1px solid #fff;
   text-decoration: none;
 }
-/* line 39, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
-#navigation a:hover {
+/* line 40, ../sass/menu.scss */
+.toggleNavWrapper nav a:hover {
   background: #474741;
 }
 
@@ -117,35 +119,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
    Please note, that you have to add special media queries for the specific cases, if you wish so! */
 @media only screen and (max-width: 768px) {
   /* Here again. The important part */
-  /* line 54, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
-  #navigation h3 {
+  /* line 56, ../sass/menu.scss */
+  .toggleNavWrapper h3 {
     display: block;
     cursor: pointer;
     background: url("../images/icon-menu.png") left no-repeat;
     margin: 0 20px;
     padding: 0 20px;
   }
-  /* line 61, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
-  #navigation h3.active {
+  /* line 63, ../sass/menu.scss */
+  .toggleNavWrapper h3.active {
     background: url("../images/icon-close.png") left no-repeat;
   }
-  /* line 65, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
-  #navigation nav {
+  /* line 70, ../sass/menu.scss */
+  .toggleNavWrapper nav ul {
     display: none;
   }
-  /* line 68, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
-  #navigation nav a {
+  /* line 74, ../sass/menu.scss */
+  .toggleNavWrapper nav.active {
+    display: block;
+  }
+  /* line 78, ../sass/menu.scss */
+  .toggleNavWrapper nav a {
     border-right: 0;
     border-top: 1px solid #fff;
   }
-  /* line 73, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
-  #navigation nav li {
+  /* line 83, ../sass/menu.scss */
+  .toggleNavWrapper nav li {
     display: block;
     float: none;
   }
 
   /* Fallback */
-  /* line 83, /Users/johngrabenmeier/Lab/jquery/Responsive/responsive-toggle-navigation/sass/menu.scss */
+  /* line 93, ../sass/menu.scss */
   .no-js #navigation nav {
     display: block;
   }
@@ -156,7 +162,7 @@ body {
 }
 
 /* line 17, ../sass/screen.scss */
-.uppercase, #navigation a {
+.uppercase, .toggleNavWrapper nav a {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -164,7 +170,7 @@ body {
 /* line 22, ../sass/screen.scss */
 h1 {
   font: 36px/120% Helvetica, Arial, sans-serif;
-  padding: 1em 0;
+  padding: 1em 20px;
 }
 
 /* line 27, ../sass/screen.scss */
@@ -177,5 +183,6 @@ header {
   /* line 34, ../sass/screen.scss */
   h1 {
     font: 18px/21px Helvetica, Arial, sans-serif;
+    padding: 20px 10px;
   }
 }

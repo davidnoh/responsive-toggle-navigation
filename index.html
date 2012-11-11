@@ -13,10 +13,10 @@
 <body class="no-js">
 <header role="banner">
 	<h1>Responsive Toggle Navigation</h1>
-	<div id="navigation">
-	<h3 id="toggleNav">Menu</h3>
-		<nav>
-			<ul class="clearfix" role="navigation">
+	<div class="toggleNavWrapper">
+		<nav class="navList"  role="navigation">
+			<h3 class="toggle-menu">Menu</h3>
+			<ul>
 				<li><a href="#Home" title="Get back to Home-Page">Home</a></li>
 				<li><a href="#Works" title="Stuff i have worked on">Works</a></li>
 				<li><a href="#About" title="Some information about myself">About</a></li>
@@ -25,21 +25,11 @@
 		</nav>
 	</div>
 </header>
-
+</div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="scripts/plugin.togglenavigation.js"></script>
 <script>
-	jQuery(function($){
-		// First: Remove the Fallback class
-		$('body').removeClass('no-js');	
-		
-		// Second: Toggle the menu
-		$('#toggleNav').click(function() {
-			$('#navigation nav').slideToggle('fast');
-			
-			// toggling active class for the posibilty of styling
-			$(this).toggleClass('active');
-		})
-	});
+	$('body').removeClass('no-js').toggleNav('.toggleNavWrapper');
 </script>
 </body>
 </html>
