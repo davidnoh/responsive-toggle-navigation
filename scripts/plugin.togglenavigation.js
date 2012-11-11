@@ -3,7 +3,7 @@
 	$.fn.toggleNav = function(wrapper) {		
 		$(wrapper).find('.toggle-menu').click(function() {
 			$(wrapper).find('nav ul').slideToggle('fast');
-			$(wrapper).find('.toggleNav').toggleClass('active');
+			$(wrapper).find('.toggle-menu').toggleClass('active');
 		});
 		
 		$(window).resize(function(){
