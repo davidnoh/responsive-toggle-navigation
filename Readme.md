@@ -3,8 +3,12 @@ This is a simple responsive toggle navigation using Media Queries, jQuery and Sa
 
 ## Features
 - Responsive
-- Toggle Function in Mobile Version
-- Multi level navigation planed
+- Lightweight
+- Simple
+
+## Planned
+- Multilevel navigation planed
+- Toggle and Slide
 
 ## Demo
 [demo.jooon.de/responsive-toggle-navigation/](http://demo.jooon.de/responsive-toggle-navigation/)
