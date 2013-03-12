@@ -1,8 +1,4 @@
 
-
-
-
-
 (function ( $ ) {
 
 	$.fn.toggleNav = function( options ) {
