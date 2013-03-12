@@ -12,9 +12,6 @@ ul {
 
 	h3 {
 		display: none;
-		margin: 0;
-		padding: 0;
-		padding: 0 10px;
 	}
 	
 	nav {
@@ -22,8 +19,6 @@ ul {
 		
 		ul {
 			list-style: none;
-			padding: 0;
-			margin: 0;
 			width: 100%;
 			background:rgba(0,0,0,.2);
 			@include clearfix;
@@ -31,8 +26,6 @@ ul {
 
 		li {
 			float: left;
-			padding: 0;
-			margin: 0;
 			position: relative;
 			
 			.toggleSub {
@@ -41,9 +34,6 @@ ul {
 			
 			ul {
 				display: none;
-				position: absolute;
-				width: 180px;
-				border-top: 1px solid #fff;
 			}
 		}
 		
@@ -56,7 +46,7 @@ ul {
 			text-decoration: none;
 
 			&:hover {
-				background: #474741;
+				background:rgba(0,0,0,.2);
 			}
 		}
 	}
@@ -97,6 +87,11 @@ ul {
 					display: block;
 					float: none;
 					overflow: hidden;
+					
+					a {
+						border-right: 0;
+						padding-right: 10%;
+					}
 
 					&.hasChild {
 						a {
@@ -109,8 +104,10 @@ ul {
 								right: 0;
 								float: right;
 								width: 10%;
-								border-top: 1px solid #fff;
-								border-left: 1px solid #fff;
+								
+								&.open {
+									background:rgba(0,0,0,.2);
+								}
 							}
 						}
 					}
@@ -119,7 +116,6 @@ ul {
 						display: none;
 						position: static;
 						width: 100%;
-						border-top: 1px solid #fff;
 					}
 
 					&:hover {
