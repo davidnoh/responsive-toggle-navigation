@@ -15,12 +15,60 @@
 	<h1>Responsive Toggle Navigation</h1>
 	<div class="toggleNavWrapper">
 		<nav class="navList"  role="navigation">
-			<h3 class="toggle-menu">Menu</h3>
+			<h3 class="toggleMenu">Menu</h3>
 			<ul>
 				<li><a href="#Home" title="Get back to Home-Page">Home</a></li>
-				<li><a href="#Works" title="Stuff i have worked on">Works</a></li>
-				<li><a href="#About" title="Some information about myself">About</a></li>
-				<li><a href="#Contact" title="How to get in contact">Contact</a></li>
+				<li><a href="#Works" title="Stuff i have worked on">Works</a>
+					<ul>
+						<li><a href="#sub1">Project One</a></li>
+						<li><a href="#sub2">Project Two</a></li>
+					</ul>
+				</li>
+				<li><a href="#About" title="Some information about myself">About</a>
+					<ul>
+						<li><a href="#sub1">Bio</a></li>
+						<li><a href="#sub2">Clients</a>
+							<ul>
+								<li><a href="#sub1">Client 1</a></li>
+								<li><a href="#sub2">Client 2</a></li>
+								<li><a href="#sub1">Client 3</a></li>
+								<li><a href="#sub2">Client 4</a>
+									<ul>
+									<li><a href="#sub1">Sub 1</a></li>
+									<li><a href="#sub2">Sub 2</a></li>
+									<li><a href="#sub1">Sub 3</a></li>
+									<li><a href="#sub2">Sub 4</a>
+										<ul>
+										<li><a href="#sub1">Sub 1</a></li>
+										<li><a href="#sub2">Sub 2</a></li>
+										<li><a href="#sub1">Sub 3</a></li>
+										<li><a href="#sub2">Sub 4</a>
+											<ul>
+											<li><a href="#sub1">Sub 1</a></li>
+											<li><a href="#sub2">Sub 2</a></li>
+											<li><a href="#sub1">Sub 3</a></li>
+											<li><a href="#sub2">Sub 4</a>
+												<ul>
+												<li><a href="#sub1">Sub 1</a></li>
+												<li><a href="#sub2">Sub 2</a></li>
+												<li><a href="#sub1">Sub 3</a></li>
+												<li><a href="#sub2">Sub 4</a></li>
+											</ul></li>
+										</ul></li>
+									</ul></li>
+								</ul></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#Contact" title="How to get in contact">Contact</a>
+					<ul>
+						<li><a href="#sub1">Imprint</a></li>
+						<li><a href="#sub2">Map</a></li>
+						<li><a href="#sub1">Linkedin</a></li>
+						<li><a href="#sub2">Xing</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	</div>
@@ -29,7 +77,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="scripts/plugin.togglenavigation.js"></script>
 <script>
-	$('body').removeClass('no-js').toggleNav('.toggleNavWrapper');
+	$('body').toggleNav('.toggleNavWrapper');
 </script>
 </body>
 </html>

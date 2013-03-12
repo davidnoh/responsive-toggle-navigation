@@ -68,48 +68,66 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 2, ../sass/menu.scss */
+/* line 6, ../sass/menu.scss */
+ul {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 10, ../sass/menu.scss */
 .toggleNavWrapper {
-  background: #000;
-  color: #fff;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 7, ../sass/menu.scss */
+/* line 13, ../sass/menu.scss */
 .toggleNavWrapper h3 {
   display: none;
   margin: 0;
   padding: 0;
   padding: 0 10px;
 }
-/* line 14, ../sass/menu.scss */
+/* line 20, ../sass/menu.scss */
 .toggleNavWrapper nav {
-  display: block;
+  background: rgba(0, 0, 0, 0.05);
 }
-/* line 17, ../sass/menu.scss */
+/* line 23, ../sass/menu.scss */
 .toggleNavWrapper nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
+  background: rgba(0, 0, 0, 0.2);
   overflow: hidden;
   *zoom: 1;
 }
-/* line 25, ../sass/menu.scss */
+/* line 32, ../sass/menu.scss */
 .toggleNavWrapper nav li {
   float: left;
   padding: 0;
   margin: 0;
+  position: relative;
 }
-/* line 32, ../sass/menu.scss */
+/* line 38, ../sass/menu.scss */
+.toggleNavWrapper nav li .toggleSub {
+  display: none;
+}
+/* line 42, ../sass/menu.scss */
+.toggleNavWrapper nav li ul {
+  display: none;
+  position: absolute;
+  width: 180px;
+  border-top: 1px solid white;
+}
+/* line 51, ../sass/menu.scss */
 .toggleNavWrapper nav a {
   color: #fff;
   display: block;
   padding: 0 40px;
-  border-right: 1px solid #fff;
+  border-right: 1px solid white;
   text-decoration: none;
 }
-/* line 40, ../sass/menu.scss */
+/* line 58, ../sass/menu.scss */
 .toggleNavWrapper nav a:hover {
   background: #474741;
 }
@@ -119,7 +137,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
    Please note, that you have to add special media queries for the specific cases, if you wish so! */
 @media only screen and (max-width: 768px) {
   /* Here again. The important part */
-  /* line 56, ../sass/menu.scss */
+  /* line 74, ../sass/menu.scss */
   .toggleNavWrapper h3 {
     display: block;
     cursor: pointer;
@@ -127,60 +145,87 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin: 0 20px;
     padding: 0 20px;
   }
-  /* line 63, ../sass/menu.scss */
+  /* line 81, ../sass/menu.scss */
   .toggleNavWrapper h3.active {
     background: url("../images/icon-close.png") left no-repeat;
   }
-  /* line 70, ../sass/menu.scss */
+  /* line 88, ../sass/menu.scss */
   .toggleNavWrapper nav ul {
     display: none;
   }
-  /* line 74, ../sass/menu.scss */
+  /* line 92, ../sass/menu.scss */
   .toggleNavWrapper nav.active {
     display: block;
   }
-  /* line 78, ../sass/menu.scss */
-  .toggleNavWrapper nav a {
-    border-right: 0;
-    border-top: 1px solid #fff;
-  }
-  /* line 83, ../sass/menu.scss */
+  /* line 96, ../sass/menu.scss */
   .toggleNavWrapper nav li {
     display: block;
     float: none;
+    overflow: hidden;
+  }
+  /* line 102, ../sass/menu.scss */
+  .toggleNavWrapper nav li.hasChild a {
+    float: left;
+    width: 90%;
+  }
+  /* line 106, ../sass/menu.scss */
+  .toggleNavWrapper nav li.hasChild a.toggleSub {
+    display: block;
+    position: absolute;
+    right: 0;
+    float: right;
+    width: 10%;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+  }
+  /* line 118, ../sass/menu.scss */
+  .toggleNavWrapper nav li ul {
+    display: none;
+    position: static;
+    width: 100%;
+    border-top: 1px solid white;
+  }
+  /* line 126, ../sass/menu.scss */
+  .toggleNavWrapper nav li:hover ul {
+    display: none;
+  }
+  /* line 129, ../sass/menu.scss */
+  .toggleNavWrapper nav li:hover ul li {
+    float: none;
+    text-align: left;
   }
 
   /* Fallback */
-  /* line 93, ../sass/menu.scss */
+  /* line 142, ../sass/menu.scss */
   .no-js #navigation nav {
     display: block;
   }
 }
-/* line 13, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
 body {
   font: 1em/1.2em Helvetica, Arial, sans-serif;
 }
 
-/* line 17, ../sass/screen.scss */
-.uppercase, .toggleNavWrapper nav a {
+/* line 15, ../sass/screen.scss */
+.uppercase {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 h1 {
   font: 36px/120% Helvetica, Arial, sans-serif;
   padding: 1em 20px;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 header {
   width: 100%;
   line-height: 50px;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 34, ../sass/screen.scss */
+  /* line 32, ../sass/screen.scss */
   h1 {
     font: 18px/21px Helvetica, Arial, sans-serif;
     padding: 20px 10px;
